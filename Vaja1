@@ -1,0 +1,12 @@
+public class Naloga1 {
+    public static void main(String[] args) {
+        StringBuffer sb = new StringBuffer("Smreka");
+        sb.append('a');
+        System.out.println(sb);
+        sb.insert(0,'X');
+        sb.insert(2,'X');
+        System.out.println(sb);
+        sb.reverse();
+        System.out.println(sb);
+    }
+}
