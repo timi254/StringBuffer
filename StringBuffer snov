@@ -1,0 +1,59 @@
+public class StringbufferSnov {
+    public static void main(String[] args) {
+        //deklaracija niza
+        StringBuffer sb = new StringBuffer("besedilo");
+        StringBuffer sb1 = new StringBuffer(); //prazen niz s kapaciteto 16
+        StringBuffer sb2 = new StringBuffer(50); //prazen niz s kapaciteto 50
+
+        //vnos niza
+        String s = "besedilo";
+        StringBuffer sb3 = new StringBuffer(s);
+
+        //metoda append
+        StringBuffer sb4 = new StringBuffer("Program");
+        sb4.append("iranje");
+        System.out.println(sb4);
+        sb4.append('e');
+        System.out.println(sb4);
+
+        //metoda insert
+        StringBuffer sb5 = new StringBuffer("Ana");
+        sb5.insert(2,"ic");
+        System.out.println(sb5);
+        sb5.insert(5,'a');
+        System.out.println(sb5);
+
+        //metoda delete
+        StringBuffer sb6 = new StringBuffer("Janez Vajkard Valvasor");
+        sb6.delete(6,14);
+        System.out.println(sb6);
+
+        //metoda deleteCharAt
+        StringBuffer sb7 = new StringBuffer("Brat");
+        sb7.deleteCharAt(1);
+        System.out.println(sb7);
+
+        //metoda setCharAt
+        StringBuffer sb8 = new StringBuffer("Brat");
+        sb8.setCharAt(0,'K');
+        System.out.println(sb8);
+
+        //metoda replace
+        StringBuffer sb9 = new StringBuffer("Janez Vajkard Valvasor");
+        sb9.replace(6,13,"V.");
+        System.out.println(sb9);
+
+        //metoda charAt
+        StringBuffer sb10 = new StringBuffer("Janez Vajkard Valvasor");
+        System.out.println(sb10.charAt(6));
+
+        //metoda substring
+        StringBuffer sb11 = new StringBuffer("Janez Vajkard Valvasor");
+        System.out.println(sb11.substring(6,13));
+
+        //metoda indexOf
+        StringBuffer sb12 = new StringBuffer("Janez Vajkard Valvasor");
+        System.out.println(sb12.indexOf("Va"));
+        System.out.println(sb12.indexOf("Va",7));
+    }
+}
